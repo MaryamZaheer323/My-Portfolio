@@ -316,6 +316,12 @@
       position: relative;
     }
     
+    .project-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
     .project-img::before {
       content: '';
       position: absolute;
@@ -649,15 +655,6 @@
             <i class="fas fa-paper-plane"></i> Hire Me
           </a>
         </div>
-
-        <div class="section" id="about">
-          <h3 class="section-title">About Me</h3>
-          <p style="color:var(--muted)">I specialize in front-end and full-stack web development using HTML, CSS, JavaScript and modern frameworks. With a keen eye for design and attention to detail, I create websites that are not only functional but also visually appealing and user-friendly. I'm currently focusing on portfolio websites, responsive UI, and small business landing pages.</p>
-          <a class="card-link" href="#contact">
-            Get in touch
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
       </section>
 
       <aside class="card animate delay-1" style="display:flex;flex-direction:column;justify-content:space-between">
@@ -705,13 +702,22 @@
 
         <div style="margin-top: 30px;">
           <h4 style="margin-bottom:12px; color: var(--yellow);">Download Resume</h4>
-          <!-- Updated to download resume -->
           <a class="btn btn-primary" href="Maryam Zaheer.pdf" download>
-            <i class="fas fa-download"></i> Download PDF
+            <i class="fas fa-download"></i> Download Full Resume (PDF)
           </a>
         </div>
       </aside>
     </main>
+
+    <!-- About Section -->
+    <section class="section card" id="about">
+      <h2 class="section-title">About Me</h2>
+      <p style="color:var(--muted);margin-bottom:20px">I specialize in front-end and full-stack web development using HTML, CSS, JavaScript and modern frameworks. With a keen eye for design and attention to detail, I create websites that are not only functional but also visually appealing and user-friendly. I'm currently focusing on portfolio websites, responsive UI, and small business landing pages.</p>
+      <a class="card-link" href="#contact">
+        Get in touch
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </section>
 
     <!-- Projects -->
     <section class="section card" id="projects">
@@ -719,7 +725,7 @@
       <div class="grid">
         <article class="project animate delay-1">
           <div class="project-img">
-            Portfolio Website Preview
+            <img src="https://mondo.com/wp-content/uploads/2023/10/tips-for-creating-digital-portfolio-get-a-job-2023.jpg" alt="Portfolio Website">
           </div>
           <h3>Portfolio Website</h3>
           <p class="subtitle" style="color:var(--muted)">A modern single-page portfolio with responsive layout, smooth interactions, and downloadable resume.</p>
@@ -728,57 +734,13 @@
             <span class="badge">CSS</span>
             <span class="badge">JavaScript</span>
           </div>
-          <a class="card-link" href="#">
+          <a class="card-link" href="home.html">
             View Project
             <i class="fas fa-arrow-right"></i>
           </a>
-        </article>
-
-        <article class="project animate delay-2">
-          <div class="project-img">
-            Landing Page Preview
-          </div>
-          <h3>Responsive Landing Page</h3>
-          <p class="subtitle" style="color:var(--muted)">Landing for a small business with contact form, gallery, and mobile-first design.</p>
-          <div class="badges">
-            <span class="badge">Bootstrap</span>
-            <span class="badge">Responsive</span>
-          </div>
-          <a class="card-link" href="#">
-            Live Demo
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-        </article>
-
-        <article class="project animate delay-3">
-          <div class="project-img">
-            Task Manager Preview
-          </div>
-          <h3>Task Manager App</h3>
-          <p class="subtitle" style="color:var(--muted)">A lightweight task manager built with vanilla JS for study and productivity tracking.</p>
-          <div class="badges">
-            <span class="badge">JavaScript</span>
-            <span class="badge">LocalStorage</span>
-          </div>
-          <a class="card-link" href="#">
+          <a class="card-link" href="https://github.com/MaryamZaheer323/My-Portfolio" target="_blank">
             Source Code
             <i class="fab fa-github"></i>
-          </a>
-        </article>
-
-        <article class="project animate delay-4">
-          <div class="project-img">
-            E-commerce Preview
-          </div>
-          <h3>E-commerce UI (mock)</h3>
-          <p class="subtitle" style="color:var(--muted)">Clean product grid and checkout flow prototype — designed for conversion and accessibility.</p>
-          <div class="badges">
-            <span class="badge">UX</span>
-            <span class="badge">Figma</span>
-          </div>
-          <a class="card-link" href="#">
-            View Prototype
-            <i class="fas fa-external-link-alt"></i>
           </a>
         </article>
       </div>
@@ -824,7 +786,7 @@
           <p style="color:var(--muted);margin:0">Freelance Web Developer (2022-Present)</p>
           <p style="color:var(--muted);font-size:14px;margin:4px 0 16px 0">Developed websites for small businesses, created responsive layouts, and implemented interactive features.</p>
 
-          <a class="card-link" href="#">
+          <a class="card-link" href="Maryam Zaheer.pdf" download>
             Download Full Resume (PDF)
             <i class="fas fa-download"></i>
           </a>
@@ -835,7 +797,7 @@
     <!-- Contact -->
     <section id="contact" class="section card">
       <h2 class="section-title">Get In Touch</h2>
-      <p style="color:var(--muted);margin-bottom:30px">I'm open to internship opportunities and freelance projects. Reach out and let's build something amazing together.</p>
+      <p style="color:var(--muted);margin-bottom:30px">I'm open to job opportunities and freelance projects. Reach out and let's build something amazing together.</p>
 
       <div class="split">
         <div>
@@ -889,10 +851,10 @@
 
     <footer>
       <div class="social-links">
-        <a href="#" class="social-link">
+        <a href="https://www.linkedin.com/in/maryam-zaheer-97307937a/" class="social-link">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="#" class="social-link">
+        <a href="https://github.com/MaryamZaheer323" class="social-link">
           <i class="fab fa-github"></i>
         </a>
         <a href="#" class="social-link">
